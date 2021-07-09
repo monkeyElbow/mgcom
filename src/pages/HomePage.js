@@ -4,7 +4,7 @@ import Bio from '../components/Bio';
 // import Text from 'react-svg-text'
 import Bird from '../components/bird';
 import Links from '../components/Links';
-import FineArt from '../components/FineArt';
+// import FineArt from '../components/FineArt';
 
 
 const HomePage = () => {
