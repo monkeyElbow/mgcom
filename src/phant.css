@@ -1,0 +1,52 @@
+#btn {
+    transition: 1.5s ease;
+  }
+  #btn .wrong{
+    fill: red;
+  }
+  #btn:hover {
+    cursor: pointer;
+    fill: azure;
+  }
+  
+  .active{
+    fill: azure;
+  }
+  
+  .clr1 {
+    fill:var(--green1);
+  }
+  
+  .clr2 {
+    fill:var(--green2);
+  }
+  
+  .clr3 {
+    fill:var(--green3);
+  }
+  
+  
+  .red {
+    color: red;
+  }
+  
+  .green {
+    color: var(--green3);
+  }
+  
+  
+  /* bird animation target */
+  #chumbo {
+    animation:fadeInUp 1s;
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform:translateY(20%)}
+    to {opacity: 1;
+    transform:translateY(0);}
+            }
+  
+            /* stagger svg items at end of https://www.youtube.com/watch?v=UTHgr6NLeEw */
+            /* style='--order: 5' to svg element  */
+            /* animation delay: calc(var(--order) * 200ms) */
