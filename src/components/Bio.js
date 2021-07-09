@@ -31,7 +31,7 @@ Melissa Gerhold is a freelance artist with a BFA in Graphic Design and a Minor i
  </p>
 <p>
     <strong>
-EXPERIENCE:</strong> Commercial Artist, Graphic Designer, Marketing Coordinator, Fine Artist, Instructor
+EXPERIENCE:</strong> <br />Commercial Artist, Graphic Designer, Marketing Coordinator, Fine Artist, Instructor
 </p>
 </Col>
 </Row>
