@@ -8,7 +8,7 @@ export default function Bio() {
 <Row>
 
 <Col className="text-md-right text-sm-center">
-            <Image fluid src="https://melissagerhold.com/images/me_6303.jpg?crc=534784634" />
+            <Image fluid src="https://melissagerhold.com/images/me_6303.jpg" />
 </Col>
 <Col md={8} sm={12}>
 <h3>
@@ -22,7 +22,7 @@ Southwest Missouri
 </p>
 <p>
     <strong>
-melissa.gerhold@mediavelocity.com
+mgerhold@gmail.com
     </strong>
 </p>
 

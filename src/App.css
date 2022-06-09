@@ -1,4 +1,5 @@
 :root {
+  --color1:#DE9C57;
   --green1:#bfd9d2;
   --green2:#79b5a4;
   --green3:#498574;
@@ -7,4 +8,8 @@
 
 .bg-green {
   background-color: #dfeae7;
+}
+
+.ls-1 {
+  letter-spacing: 0.125rem
 }
