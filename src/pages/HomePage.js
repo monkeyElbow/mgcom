@@ -1,8 +1,10 @@
-import {Container, Image, Row, Col, Card, Button} from 'react-bootstrap';
+import {Container, Image, Row, Col, Button} from 'react-bootstrap';
 import Phant from '../components/phantLogo';
 import Bio from '../components/Bio';
-import Bird from '../components/bird';
+// import Bird from '../components/bird';
 import Links from '../components/Links';
+import ShowHome from '../show/ShowHome';
+import MailChimpSubscribe from '../components/MailChimpSubscribe';
 // import FineArt from '../components/FineArt';
 // import Design from '../components/Design';
 // import Photography from '../components/Photography';
@@ -11,6 +13,9 @@ import Links from '../components/Links';
 // import {useState} from 'react'
 
 const HomePage = () => {
+
+  document.title = "Melissa Gerhold - Artist";
+
 
 //     const [fillColors, setFillColors] = useState(Array(10).fill('white'))
 // const [currentColor, setCurrentColor] = useState('blue')
@@ -35,41 +40,51 @@ style={{width:"15rem", height:"100vh"}}>
     </Container> */}
 
 <Links />
-<Container className=''>
-<p className='fs-3 fw-bold pt-5 text-uppercase lh-small'>Melissa Gerhold</p>
+<Container className='d-flex flex-column align-items-center justify-content-center'>
 
-
-<p>Freelance Artist</p>
-
+<p className='fw-bolder' style={{fontSize:"3rem"}}>Melissa Gerhold</p>
+{/* <p className='lead fs-4' style={{lineHeight:"5px"}}>Artist</p> */}
 </Container>
+<Container fluid className='p-5 pt-0 bg-dark text-white homePageImage text-center '>
 
-<Container fluid className='p-5' style={{minHeight:"80vh"}}>
 
+{/* <Row className='d-flex justify-content-center py-5'>
+
+<Col xl={6} lg={9} md={12} className="justify-items-center">
 <Image fluid src={require('../img/venice.jpg')} />
-
+</Col>
+</Row> */}
 </Container>
+
+
+<ShowHome />
+
 
 
 <Container fluid className='p-5 text-white d-flex flex-column justify-content-center align-items-center' style={{background:"var(--color1)", minHeight:"40vh"}}>
-    {/* <p className='fs-1 fw-bold text-uppercase ls-1'>Dream Create Connect</p> */}
-    <p className='fs-3'>Creating beautiful art to inspire dreams and capture the imagination</p>
+   
+    <p className='fs-2 fw-bold'>Creating beautiful art to inspire dreams and capture the imagination</p>
 </Container>
 
-<Container className='p-5' style={{minHeight:"80vh"}}>
+<Container fluid className='m-0 p-5 bg-dark text-white' style={{minHeight:"80vh"}}>
     <Row>
         <Col md={6}>
 <Image pointerEvents="none" onContextMenu="return false;" fluid src={require('../img/tiger600.jpg')} />
         </Col>
         <Col className='d-flex flex-column justify-content-center align-items-center'>
 
+        <p className='h1 lh-1 fw-bold' style={{fontSize:"400%"}}>Animals</p>
+        <p className='h1 lh-1 pb-5'>Buy on Redbubble</p>
+
+
         <Button
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.redbubble.com/people/mgerhold/shop"
           variant="outline-secondary"
-          size="sm"
+          size="lg"
         >
-          <strong>Find More At Red Bubble</strong>
+          <strong>Click Here</strong>
         </Button>{" "}
         </Col>
     </Row>
@@ -120,15 +135,21 @@ style={{width:"15rem", height:"100vh"}}>
 
 
 
-<Bird />
 <Bio />
-<Container fluid className="bg-green py-5 d-flex justify-content-center">
 
+
+<MailChimpSubscribe />
+
+
+<Container fluid className="
+py-5 d-flex justify-content-center">
 <div
-style={{width:"15rem"}}>
+style={{width:"8rem"}}>
 <Phant />
 </div>
+
 </Container>
+    {/* <Bird /> */}
 {/* <Design />
 <Photography />
 <FineArt /> */}

@@ -13,3 +13,13 @@
 .ls-1 {
   letter-spacing: 0.125rem
 }
+
+.homePageImage {
+  background-image: url('img/venice.jpg');
+  /* filter: brightness(50%); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 60vh;
+  /* color:white; */
+}
